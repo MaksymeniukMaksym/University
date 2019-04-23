@@ -1,0 +1,19 @@
+#!/bin/bash
+a=9
+b=5
+c=7
+d=5
+calc1(){
+	let y=($a+$b)/$1
+	echo "Result is $y"
+	}
+calc2(){
+	let y=($a+$b)*$1
+	echo "Result is $y"
+	}
+echo "input x"
+read x
+if [ "$x" -eq "$d" ]
+	then calc1 c
+	else calc2 c
+fi
