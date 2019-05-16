@@ -6,8 +6,8 @@ void quickSort(std::vector<int> &arr, int left, int right) {
       int i = left, j = right;
 
       int tmp;
-
-      int pivot = arr[(left + right) / 2];
+// change pivot from const to rand
+      int pivot = arr[left + rand() % (right - left + 1) ];
 
       while (i <= j) {
 
