@@ -2,14 +2,10 @@
 
 using namespace std;
 
-
-
 bool BFS(vector<int> arr[], int start, int finish, int top, int min[], int max[])
 {
-
     list<int> queue;
     bool cheked[top];
-
     for (int i = 0; i < top; i++)
     {
         cheked[i] = false;
@@ -47,7 +43,6 @@ bool BFS(vector<int> arr[], int start, int finish, int top, int min[], int max[]
     return false;
 }
 
-
 void printShortestDistance(vector<int> arr[], int lenght, int finish, int top)
 {
 
@@ -83,7 +78,6 @@ void printShortestDistance(vector<int> arr[], int lenght, int finish, int top)
     }
 }
 
-
 int main()
 {
     int top;
@@ -101,7 +95,7 @@ int main()
 
             if (number)
             {
-            arr[i].push_back(j);
+                arr[i].push_back(j);
             }
         }
     }
